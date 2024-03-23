@@ -85,10 +85,8 @@ function addBook(){
         b.setAttribute('class',"book-"+(books.length-1).toString())
         b.setAttribute("id","book-"+(books.length-1).toString());
         if(stoc=="in-stock"){
-            
             b.innerHTML='<div class="book"><div class="book-img"><img src="'+imgUrl+'" width="70px"></div><div class="book-title"> '+ tit+'</div><div class="book-author">'+ aut+'</div><div class="book-stock" style="background-color:green">'+ stoc+'</div><div class="book-price">'+ pri+'</div><div class="book-delete-'+(books.length-1).toString()+'"> <i class="fa-regular fa-trash-can" onclick="deleteBook()"></i></div></div>' 
         } else { 
-           
         b.innerHTML='<div class="book"><div class="book-img"><img src="'+imgUrl+'" width="70px"></div><div class="book-title"> '+ tit+'</div><div class="book-author">'+ aut+'</div><div class="book-stock" style="background-color:red">'+ stoc+'</div><div class="book-price">'+ pri+'</div><div class="book-delete-'+(books.length-1).toString()+'"> <i class="fa-regular fa-trash-can" onclick="deleteBook()"></i></div></div>'
         }grid.appendChild(b)
 
