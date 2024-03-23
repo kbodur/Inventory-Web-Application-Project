@@ -116,9 +116,7 @@ body {
   padding: 25px 0 0;
   width: 250px;
   border-bottom: 2px solid navy;
-}
-#stock__out {
-  background-color: red;
+  background-color: green;
 }
 
 .button {
